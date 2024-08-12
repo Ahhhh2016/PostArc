@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PostArc
-//
-//  Created by Yixuan Liu on 8/12/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -16,25 +9,28 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                if postcardData.images.isEmpty {
+                if postcardData.postcards.isEmpty {
                     Text("No postcards yet")
                         .font(.headline)
                         .padding()
                 } else {
-                    ScrollView {
-                        ForEach(postcardData.images, id: \.self) { image in
-                            Image(uiImage: image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 200)
-                                .padding()
+                    List {
+                        ForEach($postcardData.postcards) { $postcard in
+                            NavigationLink(destination: PostcardDetailView(postcard: $postcard)) {
+                                Image(uiImage: postcard.image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 200)
+                                    .padding()
+                            }
                         }
+                        .onDelete(perform: deletePostcard)
                     }
                 }
                 Button(action: {
                     isImagePickerPresented = true
                 }) {
-                    Text("Add Postcards")
+                    Text("Add Postcard")
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -46,27 +42,26 @@ struct ContentView: View {
                         isImageCropperPresented = true
                     }
                 }) {
-                    ImagePicker(images: $postcardData.images, selectedImage: $selectedImage)
+                    ImagePicker(selectedImage: $selectedImage)
                 }
                 .sheet(isPresented: $isImageCropperPresented, onDismiss: {
-                    // If cropping is canceled, re-present the image picker
                     if selectedImage == nil {
                         isImagePickerPresented = true
                     } else if let croppedImage = selectedImage {
-                        // Save the cropped image if cropping was successful
-                        postcardData.addImage(croppedImage)
+                        postcardData.addPostcard(croppedImage)
                     }
                 }) {
                     ImageCropper(image: $selectedImage)
                 }
             }
             .navigationTitle("Postcard Album")
+            .toolbar {
+                EditButton()
+            }
         }
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    private func deletePostcard(at offsets: IndexSet) {
+        postcardData.deletePostcard(at: offsets)
     }
 }

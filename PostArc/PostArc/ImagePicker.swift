@@ -9,13 +9,12 @@ import SwiftUI
 import PhotosUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    @Binding var images: [UIImage]
     @Binding var selectedImage: UIImage?
 
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var configuration = PHPickerConfiguration()
         configuration.filter = .images
-        configuration.selectionLimit = 1
+        configuration.selectionLimit = 1  // Only one image can be selected at a time
 
         let picker = PHPickerViewController(configuration: configuration)
         picker.delegate = context.coordinator

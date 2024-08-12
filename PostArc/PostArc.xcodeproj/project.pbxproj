@@ -20,6 +20,8 @@
 		55B131982C6A220300AE5DE0 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 55B131972C6A220300AE5DE0 /* TOCropViewController */; };
 		55B1319A2C6A221800AE5DE0 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131992C6A221800AE5DE0 /* ImageCropper.swift */; };
 		55B1319C2C6A497400AE5DE0 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B1319B2C6A497400AE5DE0 /* temp.swift */; };
+		55B1319E2C6A59F900AE5DE0 /* Postcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B1319D2C6A59F900AE5DE0 /* Postcard.swift */; };
+		55B131A02C6A61DB00AE5DE0 /* PostcardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B1319F2C6A61DB00AE5DE0 /* PostcardDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		55B131922C6A1D9600AE5DE0 /* PostcardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardData.swift; sourceTree = "<group>"; };
 		55B131992C6A221800AE5DE0 /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
 		55B1319B2C6A497400AE5DE0 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+		55B1319D2C6A59F900AE5DE0 /* Postcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcard.swift; sourceTree = "<group>"; };
+		55B1319F2C6A61DB00AE5DE0 /* PostcardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +110,15 @@
 		55B131652C6A171F00AE5DE0 /* PostArc */ = {
 			isa = PBXGroup;
 			children = (
-				55B131662C6A171F00AE5DE0 /* PostArcApp.swift */,
-				55B131682C6A171F00AE5DE0 /* ContentView.swift */,
 				55B1316A2C6A172000AE5DE0 /* Assets.xcassets */,
-				55B1316C2C6A172000AE5DE0 /* Preview Content */,
-				55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */,
-				55B131922C6A1D9600AE5DE0 /* PostcardData.swift */,
+				55B131682C6A171F00AE5DE0 /* ContentView.swift */,
 				55B131992C6A221800AE5DE0 /* ImageCropper.swift */,
+				55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */,
+				55B131662C6A171F00AE5DE0 /* PostArcApp.swift */,
+				55B1319D2C6A59F900AE5DE0 /* Postcard.swift */,
+				55B131922C6A1D9600AE5DE0 /* PostcardData.swift */,
+				55B1319F2C6A61DB00AE5DE0 /* PostcardDetailView.swift */,
+				55B1316C2C6A172000AE5DE0 /* Preview Content */,
 				55B1319B2C6A497400AE5DE0 /* temp.swift */,
 			);
 			path = PostArc;
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B1319E2C6A59F900AE5DE0 /* Postcard.swift in Sources */,
+				55B131A02C6A61DB00AE5DE0 /* PostcardDetailView.swift in Sources */,
 				55B1319A2C6A221800AE5DE0 /* ImageCropper.swift in Sources */,
 				55B131912C6A1D3B00AE5DE0 /* ImagePicker.swift in Sources */,
 				55B131692C6A171F00AE5DE0 /* ContentView.swift in Sources */,
