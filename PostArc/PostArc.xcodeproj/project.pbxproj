@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55B131672C6A171F00AE5DE0 /* PostArcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131662C6A171F00AE5DE0 /* PostArcApp.swift */; };
+		55B131692C6A171F00AE5DE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131682C6A171F00AE5DE0 /* ContentView.swift */; };
+		55B1316B2C6A172000AE5DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B1316A2C6A172000AE5DE0 /* Assets.xcassets */; };
+		55B1316E2C6A172000AE5DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B1316D2C6A172000AE5DE0 /* Preview Assets.xcassets */; };
+		55B131782C6A172000AE5DE0 /* PostArcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131772C6A172000AE5DE0 /* PostArcTests.swift */; };
+		55B131822C6A172000AE5DE0 /* PostArcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131812C6A172000AE5DE0 /* PostArcUITests.swift */; };
+		55B131842C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131832C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift */; };
+		55B131912C6A1D3B00AE5DE0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */; };
+		55B131932C6A1D9600AE5DE0 /* PostcardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131922C6A1D9600AE5DE0 /* PostcardData.swift */; };
+		55B131962C6A220300AE5DE0 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 55B131952C6A220300AE5DE0 /* CropViewController */; };
+		55B131982C6A220300AE5DE0 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 55B131972C6A220300AE5DE0 /* TOCropViewController */; };
+		55B1319A2C6A221800AE5DE0 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B131992C6A221800AE5DE0 /* ImageCropper.swift */; };
+		55B1319C2C6A497400AE5DE0 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B1319B2C6A497400AE5DE0 /* temp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55B131742C6A172000AE5DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B1315B2C6A171F00AE5DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B131622C6A171F00AE5DE0;
+			remoteInfo = PostArc;
+		};
+		55B1317E2C6A172000AE5DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B1315B2C6A171F00AE5DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B131622C6A171F00AE5DE0;
+			remoteInfo = PostArc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55B131632C6A171F00AE5DE0 /* PostArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B131662C6A171F00AE5DE0 /* PostArcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArcApp.swift; sourceTree = "<group>"; };
+		55B131682C6A171F00AE5DE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55B1316A2C6A172000AE5DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55B1316D2C6A172000AE5DE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55B131732C6A172000AE5DE0 /* PostArcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostArcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B131772C6A172000AE5DE0 /* PostArcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArcTests.swift; sourceTree = "<group>"; };
+		55B1317D2C6A172000AE5DE0 /* PostArcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostArcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B131812C6A172000AE5DE0 /* PostArcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArcUITests.swift; sourceTree = "<group>"; };
+		55B131832C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		55B131922C6A1D9600AE5DE0 /* PostcardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardData.swift; sourceTree = "<group>"; };
+		55B131992C6A221800AE5DE0 /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
+		55B1319B2C6A497400AE5DE0 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55B131602C6A171F00AE5DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B131982C6A220300AE5DE0 /* TOCropViewController in Frameworks */,
+				55B131962C6A220300AE5DE0 /* CropViewController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B131702C6A172000AE5DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B1317A2C6A172000AE5DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55B1315A2C6A171F00AE5DE0 = {
+			isa = PBXGroup;
+			children = (
+				55B131652C6A171F00AE5DE0 /* PostArc */,
+				55B131762C6A172000AE5DE0 /* PostArcTests */,
+				55B131802C6A172000AE5DE0 /* PostArcUITests */,
+				55B131642C6A171F00AE5DE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55B131642C6A171F00AE5DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55B131632C6A171F00AE5DE0 /* PostArc.app */,
+				55B131732C6A172000AE5DE0 /* PostArcTests.xctest */,
+				55B1317D2C6A172000AE5DE0 /* PostArcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55B131652C6A171F00AE5DE0 /* PostArc */ = {
+			isa = PBXGroup;
+			children = (
+				55B131662C6A171F00AE5DE0 /* PostArcApp.swift */,
+				55B131682C6A171F00AE5DE0 /* ContentView.swift */,
+				55B1316A2C6A172000AE5DE0 /* Assets.xcassets */,
+				55B1316C2C6A172000AE5DE0 /* Preview Content */,
+				55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */,
+				55B131922C6A1D9600AE5DE0 /* PostcardData.swift */,
+				55B131992C6A221800AE5DE0 /* ImageCropper.swift */,
+				55B1319B2C6A497400AE5DE0 /* temp.swift */,
+			);
+			path = PostArc;
+			sourceTree = "<group>";
+		};
+		55B1316C2C6A172000AE5DE0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55B1316D2C6A172000AE5DE0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55B131762C6A172000AE5DE0 /* PostArcTests */ = {
+			isa = PBXGroup;
+			children = (
+				55B131772C6A172000AE5DE0 /* PostArcTests.swift */,
+			);
+			path = PostArcTests;
+			sourceTree = "<group>";
+		};
+		55B131802C6A172000AE5DE0 /* PostArcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55B131812C6A172000AE5DE0 /* PostArcUITests.swift */,
+				55B131832C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift */,
+			);
+			path = PostArcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55B131622C6A171F00AE5DE0 /* PostArc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B131872C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArc" */;
+			buildPhases = (
+				55B1315F2C6A171F00AE5DE0 /* Sources */,
+				55B131602C6A171F00AE5DE0 /* Frameworks */,
+				55B131612C6A171F00AE5DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostArc;
+			packageProductDependencies = (
+				55B131952C6A220300AE5DE0 /* CropViewController */,
+				55B131972C6A220300AE5DE0 /* TOCropViewController */,
+			);
+			productName = PostArc;
+			productReference = 55B131632C6A171F00AE5DE0 /* PostArc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55B131722C6A172000AE5DE0 /* PostArcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B1318A2C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArcTests" */;
+			buildPhases = (
+				55B1316F2C6A172000AE5DE0 /* Sources */,
+				55B131702C6A172000AE5DE0 /* Frameworks */,
+				55B131712C6A172000AE5DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B131752C6A172000AE5DE0 /* PBXTargetDependency */,
+			);
+			name = PostArcTests;
+			productName = PostArcTests;
+			productReference = 55B131732C6A172000AE5DE0 /* PostArcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55B1317C2C6A172000AE5DE0 /* PostArcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B1318D2C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArcUITests" */;
+			buildPhases = (
+				55B131792C6A172000AE5DE0 /* Sources */,
+				55B1317A2C6A172000AE5DE0 /* Frameworks */,
+				55B1317B2C6A172000AE5DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B1317F2C6A172000AE5DE0 /* PBXTargetDependency */,
+			);
+			name = PostArcUITests;
+			productName = PostArcUITests;
+			productReference = 55B1317D2C6A172000AE5DE0 /* PostArcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55B1315B2C6A171F00AE5DE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					55B131622C6A171F00AE5DE0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					55B131722C6A172000AE5DE0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 55B131622C6A171F00AE5DE0;
+					};
+					55B1317C2C6A172000AE5DE0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 55B131622C6A171F00AE5DE0;
+					};
+				};
+			};
+			buildConfigurationList = 55B1315E2C6A171F00AE5DE0 /* Build configuration list for PBXProject "PostArc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55B1315A2C6A171F00AE5DE0;
+			packageReferences = (
+				55B131942C6A220300AE5DE0 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+			);
+			productRefGroup = 55B131642C6A171F00AE5DE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55B131622C6A171F00AE5DE0 /* PostArc */,
+				55B131722C6A172000AE5DE0 /* PostArcTests */,
+				55B1317C2C6A172000AE5DE0 /* PostArcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55B131612C6A171F00AE5DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B1316E2C6A172000AE5DE0 /* Preview Assets.xcassets in Resources */,
+				55B1316B2C6A172000AE5DE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B131712C6A172000AE5DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B1317B2C6A172000AE5DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55B1315F2C6A171F00AE5DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B1319A2C6A221800AE5DE0 /* ImageCropper.swift in Sources */,
+				55B131912C6A1D3B00AE5DE0 /* ImagePicker.swift in Sources */,
+				55B131692C6A171F00AE5DE0 /* ContentView.swift in Sources */,
+				55B131932C6A1D9600AE5DE0 /* PostcardData.swift in Sources */,
+				55B131672C6A171F00AE5DE0 /* PostArcApp.swift in Sources */,
+				55B1319C2C6A497400AE5DE0 /* temp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B1316F2C6A172000AE5DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B131782C6A172000AE5DE0 /* PostArcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B131792C6A172000AE5DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B131822C6A172000AE5DE0 /* PostArcUITests.swift in Sources */,
+				55B131842C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55B131752C6A172000AE5DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B131622C6A171F00AE5DE0 /* PostArc */;
+			targetProxy = 55B131742C6A172000AE5DE0 /* PBXContainerItemProxy */;
+		};
+		55B1317F2C6A172000AE5DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B131622C6A171F00AE5DE0 /* PostArc */;
+			targetProxy = 55B1317E2C6A172000AE5DE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55B131852C6A172000AE5DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55B131862C6A172000AE5DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55B131882C6A172000AE5DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PostArc/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55B131892C6A172000AE5DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PostArc/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55B1318B2C6A172000AE5DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostArc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PostArc";
+			};
+			name = Debug;
+		};
+		55B1318C2C6A172000AE5DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostArc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PostArc";
+			};
+			name = Release;
+		};
+		55B1318E2C6A172000AE5DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PostArc;
+			};
+			name = Debug;
+		};
+		55B1318F2C6A172000AE5DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z952C27CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yixuan.PostArcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PostArc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55B1315E2C6A171F00AE5DE0 /* Build configuration list for PBXProject "PostArc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B131852C6A172000AE5DE0 /* Debug */,
+				55B131862C6A172000AE5DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B131872C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B131882C6A172000AE5DE0 /* Debug */,
+				55B131892C6A172000AE5DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B1318A2C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B1318B2C6A172000AE5DE0 /* Debug */,
+				55B1318C2C6A172000AE5DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B1318D2C6A172000AE5DE0 /* Build configuration list for PBXNativeTarget "PostArcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B1318E2C6A172000AE5DE0 /* Debug */,
+				55B1318F2C6A172000AE5DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55B131942C6A220300AE5DE0 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55B131952C6A220300AE5DE0 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55B131942C6A220300AE5DE0 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		55B131972C6A220300AE5DE0 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55B131942C6A220300AE5DE0 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 55B1315B2C6A171F00AE5DE0 /* Project object */;
+}
