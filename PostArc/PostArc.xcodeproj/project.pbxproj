@@ -111,13 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				55B1316A2C6A172000AE5DE0 /* Assets.xcassets */,
-				55B131682C6A171F00AE5DE0 /* ContentView.swift */,
+				55B6DE022C889A2600490AA8 /* views */,
 				55B131992C6A221800AE5DE0 /* ImageCropper.swift */,
 				55B131902C6A1D3A00AE5DE0 /* ImagePicker.swift */,
 				55B131662C6A171F00AE5DE0 /* PostArcApp.swift */,
-				55B1319D2C6A59F900AE5DE0 /* Postcard.swift */,
-				55B131922C6A1D9600AE5DE0 /* PostcardData.swift */,
-				55B1319F2C6A61DB00AE5DE0 /* PostcardDetailView.swift */,
+				55B6DE042C889B1400490AA8 /* model */,
+				55B6DE032C889B0700490AA8 /* resources */,
 				55B1316C2C6A172000AE5DE0 /* Preview Content */,
 				55B1319B2C6A497400AE5DE0 /* temp.swift */,
 			);
@@ -147,6 +146,31 @@
 				55B131832C6A172000AE5DE0 /* PostArcUITestsLaunchTests.swift */,
 			);
 			path = PostArcUITests;
+			sourceTree = "<group>";
+		};
+		55B6DE022C889A2600490AA8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				55B131682C6A171F00AE5DE0 /* ContentView.swift */,
+				55B1319F2C6A61DB00AE5DE0 /* PostcardDetailView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		55B6DE032C889B0700490AA8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				55B131922C6A1D9600AE5DE0 /* PostcardData.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		55B6DE042C889B1400490AA8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				55B1319D2C6A59F900AE5DE0 /* Postcard.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
